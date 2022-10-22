@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="nombre">
+    <meta name="description" content="aprenidendo fundamentos con coex">
+    <meta name="keywords"  content="Aprende logica html,css,javascript,BD,vue,js,laravel">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>DOM</title>
+</head>
+<body class="text-center">
+     
+    <!-- ejercicio de clase  -->
+    <header class="header">
+        <h1 class="ejemplo">Fundamentos de javascript</h1>
+    </header>
+    <div class="ejemplo">
+        <h3 class="ejemplo">Ejemplo 1</h3>
+        <br>
+        <div id="div1">Aqui va la lista</div>
+    </div>
+    <div class="ejemplo">
+        <h3>Ejemplo 2</h3>
+        <br>
+        <div class="contenido">
+            <div id="array1"></div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <h3 class="ejercicio">Ejercicio 1</h3>
+    <form class="formSuma">
+        <label for="n1">Numero 1</label>
+        <input type="number" name="" id="n1" required/>
+        <label for="n1">Numero 2</label>
+        <input type="number" name="" id="n2" required/>
+        <button type="button" class="btn btn-info" onclick="calcular1()" id="suma">Calcular</button>
+        <label for="formRes">Resultado:</label>
+        <input type="text" id="result" placeholder="Resultado">
+    </form>
+    <br><br>
+    <hr>
+    <h2 class="text-center">ejercicio 2</h2>
+    <h3 class="ejercicio">Ejercicio Calculadora</h3>
+    <form class="formSuma ">
+        <label for="formRes">Resultado:</label>
+        <input type="text" id="resul" placeholder="Resultado" disabled>
+        <label for="n1">Número 1</label>
+        <input type="number" name="" id="nUno" required/>
+        <label for="n1">Número 2</label>
+        <input type="number" name="" id="nDos" required/>
+        <div class="botones mt-4">
+            <!-- boton para sumar -->
+            <button type="button" class="btn btn-info" id="sumar" >+</button>
+            <!-- boton para restar -->
+            <button type="button" class="btn btn-info" id="restar">-</button>
+            <!-- boton para multiplicar -->
+            <button type="button" class="btn btn-info" id="multiplicar" >*</button>
+            <!-- boton para dividir -->
+            <button type="button" class="btn btn-info" id="dividir" >/</button>
+            <button type="reset" class="btn btn-success">Limpiar</button>
+        </div>
+        <button type="button" class="btn btn-info mt-4" onclick="calcularBoton()" >Calcular</button>
+    </form>
+    <hr>
+    <br>
+ <!-- //cuenta regresiva -->
+    <h3>Ejercicio 3</h3>
+    <div class="regresiva">
+        <label for="numRegresiva">Número</label>
+        <input type="number" name="" id="numRegresiva"/>
+        <button type="button" class="btn btn-info" onclick="capturarDato();">Calcular</button>               
+        <input type="text" name="" id="result" placeholder="result">        
+    </div> 
+    <hr>
+    <h2 class="ejemplo">Ejercicio 4</h2>
+    <!-- forma con evenListener -->
+    <form action="" class="ejerColor">
+        <p><select name="" id="select1">
+            <option value="ff0000">Rojo</option>
+            <option value="00ff00">Verde</option>
+            <option value="0000ff">Azul</option>
+        </select></p>
+        <p>Número de índice seleccionado del objeto Select: <input type="text" id="text1"></p>
+        <p>Texto seleccionado: <input type="text" id="text2"></p>
+        <p>Valor asociado: <input type="text" id="text3"></p>
+        <p> color:<input type="color" name="" id="valuecolor"></p>
+    </form>
+    <hr>
+    <section>
+
+        <h2 class="ejercicio ">Ejercicio 5 <br> textarea</h2>
+        <br>
+        <label for="description">Descripcion</label>
+        <!-- control tex-tarea -->
+        <textarea name="" id="description" cols="100" rows="5" required></textarea>
+        <!-- btn para validar -->
+        <input type="button" id="btnTextArea" class="btn btn-drak btn-outline-danger " value="validar">
+    </section>
+    <hr>
+        <div>
+            <!-- Ejercicio 6 - 
+            validar tamaño de caracteres -->
+            <h4>Ejercicio 6</h4>
+            <div class="ejemplos">                
+                <label for="pss">Contraseña:</label>
+                <input type="password" name="pss" id="clave"> 
+                <input id="btnPss" type="button" class="btn btn-dark" value="Confirmar">
+            </div>
+            <hr>
+            <h4>Ejercicio 7</h4>
+            <p>Control Select</p>
+            <form class="form">                
+                <p>
+                    <select name="" id="select1">
+                        <option value="ff0000">Red</option>
+                        <option value="00ff00">Green</option>
+                        <option value="0000ff">Blue</option>
+                        <option value="ffff00">Yellow</option>
+                    </select>
+                </p>
+                <label for="text1">Number index selected:</label>
+                <input type="text" name="" id="text1" placeholder="indice Seleccionado">
+                <label for="text2">text selected:</label>
+                <input type="text" name="" id="text2" placeholder="texto Seleccionado">
+                <label for="text3">Color Value selected:</label>
+                <input type="text" name="" id="text3" placeholder="valor Seleccionado">
+                <input type="color" name="" id="valueColor">
+                <br><br>
+                <h4>Ejercicio 8 - checkbox</h4>
+                <br>
+                <label for="chkEjemplo">input check Example:</label>
+                <input type="checkbox" name="chkEjemplo" id="chkEjemplo" onchange="alertaCheck(this);">
+                <p id="txtImpresion"></p>
+
+                <br>
+                <section class="">
+                    
+                <label for="">input check items:</label>
+                <label for="chk1">JavaScript <input type="checkbox" name="" id="chk1"></label>
+                <label for="chk2">HTML/CSS <input type="checkbox" name="" id="chk2"></label>
+                <label for="chk3">Python <input type="checkbox" name="" id="chk3"></label>
+                <label for="chk4">JAVA <input type="checkbox" name="" id="chk4"></label>
+                <label for="chk5">PHP <input type="checkbox" name="" id="chk5"></label>
+                <input id="btnChk" type="button" class="btn btn-dark" value="Validar">
+                
+                </section>
+                <br><br>
+                <h4>Ejercicio 9</h4>
+
+                <label for="description">Descripción</label>
+                <!-- control textarea -->
+                <textarea name="" id="description" cols="100" rows="5" required></textarea>
+                <!-- btn validar -->
+                <input id="btnTextArea" type="button" class="btn btn-dark btn-outline-danger" value="Validar" >
+    <br>
+                <h4>Ejercicio 10</h4>
+                <p class="fs-3">Expresiones regulares</p>
+                <label for="txtCar">Ejemplo Expresión regular: Letra+Vocal</label>
+                <input type="text" name="" id="txtCar" placeholder="ingrese texto">
+                <p id="rtaRegular"></p>
+                <input id="btnRegular" type="button" class="btn btn-primary" value="Validar">
+    <br>
+                <label for="txtReg">Ejemplo Expresión regular: Letra+Vocal+número+longitud</label>
+                <input type="text" name="" id="txtReg" placeholder="ingrese texto">
+                <p id="rtaRegular2"></p>
+                <input id="btnRegular2" type="button" class="btn btn-primary" value="Validar">
+    <br>
+                <!-- ejemplo del telefono -->
+                <label for="txtNumber">Ejemplo Expresión regular: Números</label>
+                <input type="number" name="" id="txtNumber" placeholder="ingrese número">
+                <p id="rtaRegular3"></p>
+                <input id="btnRegular3" type="button" class="btn btn-primary" value="Validar">
+            </form>
+        </div>
+        <div>
+            <h4>Ejercicio 11</h4>
+            <h4>Eventos del teclado</h4>
+            <div class="ejemplos">
+                <label for="text">Ingrese un texto:</label>
+                <input type="text" name="" id="text">
+                <div id="rtaTeclado"></div>
+                <p><u> Ejemplo muestra una alerta en pantalla cada vez que ingreso un caracter en la caja de texto</u></p>
+            </div>
+            <div class="ejemplos">
+                <label for="text"><u>11.3 Evento keyup Ingrese un texto (max 50 caracteres):</u></label>
+                <input type="text" id="tamText">
+                <!-- <input type="text" id="tamText" size="60" maxlength="50"> permite una cantidad maxima de 50 dentro del texto -->
+                <p>Cantidad de caracteres disponibles: <span id="cantidad" style="color:red;">50</span></p>
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    <section>
+        <div>
+            <ul id="myList">
+                <li>coffee</li>
+                <li>tea</li>
+            </ul>
+            <input id="btnadd" type="button" class="btn btn-primary" value="add">
+        </div>
+        <h4>Ejercicio 12 - Creación de nodos</h4>
+        <div class="ejemplos">
+            <div id="base">
+                <!-- <p id="primero">primer texto fijo</p> -->
+                <input id="btnCrear" type="button" class="btn btn-primary" value="Crear">
+
+                <input id="btnCopiar" type="button" class="btn btn-primary" value="Duplicar">
+
+                <input id="btnEliminar" type="button" class="btn btn-outline-danger" value="Eliminar">
+            </div>
+             <!-- contenedor destino de la manipulación de los nodos: -->
+            <div id="copia">
+                <p id="nuevoTexto"></p>
+            </div>
+        </div>
+
+        <br><br><br>
+    </section>
+    <section>
+        <h4>Ejercicio 13 - Manipulación de imágenes</h4>
+        <div class="ejemplos">
+            <div id="visor">
+            <h3 id="descripcion">Galería</h3>
+                <img src="./images/pc_laptop.jpg" id="pantalla"/>
+            </div>
+            <div id="miniaturas">
+                <!-- opción 1 -->
+                <img class="rounded" onclick="muestra('primera')" name="primera" src="./images/gal5.jpg" />
+                <img class="rounded" onclick="muestra('segunda')" name="segunda"src="./images/pc_keyboard.jpg"/>
+                <img class="rounded" name="tercera" onclick="muestra('tercera')" src="./images/pc_laptops.jpg"/>
+                <img class="rounded" onclick="muestra(4)" src="./images/webDesign.jpg"/>
+               
+                <!-- opcion 2 -->
+                <!-- <img id="imgU" name="primera" src="./images/gal5.jpg" />
+                <img id="imgD" src="./images/pc_keyboard.jpg"/>
+                <img id="imgT" src="./images/pc_laptops.jpg"/>
+                <img id="imgC" src="./images/webDesign.jpg"/> -->
+            </div>
+        </div>
+    </section>
+    <section>
+        <h4>Ejercicio 14 - Crear una lista de elementos</h4>
+        <br>
+        <div class="container">
+            <div id="principal" class="card card-body col-sm-12">
+                <h4 class="title fs-2">Agregar Elementos:</h4>
+                <form class="form col-auto mb-3" id="frmLista">
+                        <input type="text" id="txtElemento" class="form-control" placeholder="Escribir elemento">
+                        <input type="submit" value="Agregar" class="btn btn-light btn-outline-primary">
+                </form>
+                <h4 class="title fs-2">Elementos:</h4>
+                <ul id="elementos" class="list-group">
+                    <li class="list-group-item">Elemento 1 
+                        <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</button></li>
+                    <li class="list-group-item">Elemento 2 
+                        <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</button></li>
+                    <li class="list-group-item">Elemento 3 
+                        <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</button></li>
+                    <li class="list-group-item">Elemento 4 
+                        <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</button></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+    <br><br><br>      
+    <script src="./ejercicio.js"></script>
+ </body>
+ <footer>
+    Kevin Andres Diaz Rincon 
+
+ </footer>
+</html>
